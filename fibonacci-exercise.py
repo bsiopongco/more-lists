@@ -11,6 +11,12 @@ the first 50 terms of the fibonacci sequence, starting with 0
 """
 
 fib = [0, 1]
+fib[-1]
+fib[-2]
+y = 0
+for y in range (48):
+    x = fib[-1] + fib[-2]
+    fib.append(x)
 
 # TIP: How can you refer to the last item in a list? Print the last item in the list called fib
 
