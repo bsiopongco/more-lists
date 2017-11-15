@@ -17,5 +17,40 @@ Advice:
 
 There is no automated checking on this one
 """
+# Printing message for user
+print("Let's make a grocery list!")
 
-shopping_list = []
+
+# defining grocery_list as a list
+grocery_list = []
+
+# defining answer as input question
+# add .lower at the end of input to convert string to all lowercase letters
+answer = input("Would you like to add something to your list?").lower()
+
+
+# creating an if statement if answer == yes
+if answer == "yes":
+
+# creating a while loop that allows user to add items to list and then prints list out
+    while True:
+
+        # item is set as input variable for what user would like to add
+        item = input("what would you like to add to your list?")
+
+
+        # adds item to end of the list and prints the list out
+        grocery_list.append(item)
+        print(f"{grocery_list}")
+        answer = input("would you like to add something else?").lower()
+        if answer == "no":
+            print("have a nice day!")
+            break
+else:
+    print("have a nice day!")
+
+
+
+
+
+
