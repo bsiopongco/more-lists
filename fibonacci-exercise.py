@@ -9,13 +9,27 @@ the first 50 terms of the fibonacci sequence, starting with 0
 # Don't try writing the code all at once. Break it down into pieces
 # I have some tips below that will help you figure this out. You can delete them (and the code that goes with them) when you no longer need them
 """
-
+# creating original list with 2 items in it
 fib = [0, 1]
+
+
+# listing out last and second to last item in list
 fib[-1]
 fib[-2]
+
+
+# set y value
 y = 0
+
+
+#set for loop for y in range 48 to get next 48 terms
 for y in range (48):
+
+
+    # adds the last two previous terms in the list together
     x = fib[-1] + fib[-2]
+
+    #adds x to end of the list
     fib.append(x)
 
 # TIP: How can you refer to the last item in a list? Print the last item in the list called fib
